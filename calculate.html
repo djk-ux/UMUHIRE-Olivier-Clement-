@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>calculate</title>
+  
+<style>
+  *{padding:0;margin:0;box-sizing:border-box;text-align:center;}
+  body{background:#124;}
+ 
+ input{
+    width:100%;color:#ddd;background:#013;border:none;height:70px;font-size:19px;
+  
+  cursor:pointer; 
+  }
+  :focus{outline:none;}
+  .red{background:#f58;}
+  .blue{background:#0cf;}
+ 
+ .white{background:#fff;height:100px;color:#666;text-align:right;padding-right:5px;}
+  .plus{height:140px;}
+
+  table{margin-left: 5%;margin-top:5%
+}
+   nav {
+            background-color: #f4f4f4;
+            padding: 10px;
+  
+      }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+         
+   text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+   
+     }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+ 
+       }
+ 
+ </style>
+</head>
+<body>
+       <nav>
+        <ul>
+ 
+           <li><a href="index.html">Home</a></li>
+ 
+           <li><a href="calculate.html">Our Calcalation</a></li>
+
+            <!-- Add more links here -->
+
+        </ul>
+    </nav>
+
+ 
+<section>
+
+            <h2>Media Content</h2>
+            <p>This page contains media content.</p>
+
+            <p>Here's a <a href="index.html">link back to Home</a>.</p>
+
+            <div>
+                <video width="320" height="240" controls>
+ 
+                   <source src="video.mp4" type="video/mp4">
+   
+                 Your browser does not support the video tag.
+     
+           </video>
+  
+              <br>
+      
+          <audio controls>
+ 
+                   <source src="audio.mp3" type="audio/mpeg">
+    
+                Your browser does not support the audio element.
+ 
+               </audio>
+   
+         </div>
+    
+    </section>
+
+
+  <center>
+ 
+ <form method="POST" action="" name="cal">
+
+ 
+   <table cellspacing="0" width="90%">
+    
+  <tr>
+        <td colspan="4"><input type="text" id="opt" class="white"></td>
+
+        </tr>
+        <tr>
+        <td colspan="2"><input type="reset" value="c" class="red"></td>
+
+        <td>    <input type="button" value="/" onclick="document.cal.opt.value+='/'"></td>
+   
+     <td>   <input type="button" value="*" onclick="document.cal.opt.value+='*'"><td></tr>
+  
+        <tr>
+        <td> <input type="button" value="7"onclick="document.cal.opt.value+='7'"></td>
+
+        <td>   <input type="button" value="8"onclick="document.cal.opt.value+='8'"></td>
+  
+     <td>   <input type="button" value="9"onclick="document.cal.opt.value+='9'"></td>
+      
+  <td> <input type="button" value="-"onclick="document.cal.opt.value+='-'"></td></tr>
+       
+   <tr>
+          <td>  <input type="button" value="4" onclick="document.cal.opt.value+='4'"></td>
+ 
+         <td>  <input type="button" value="5"onclick="document.cal.opt.value+='5'"></td>
+       
+   <td>   <input type="button" value="6"onclick="document.cal.opt.value+='6'"></td>
+         
+   <td rowspan="2">   <input type="button" value="+" class="plus"onclick="document.cal.opt.value+='+'"></td>
+  
+      </tr>
+          <tr>
+            <td>   <input type="button" value="1"onclick="document.cal.opt.value+='1'"></td>
+ 
+           <td>   <input type="button" value="2"onclick="document.cal.opt.value+='2'"></td>
+          
+  <td>   <input type="button" value="3"onclick="document.cal.opt.value+='3'"></td>
+        </tr>
+      <tr>
+    
+        <td>   <input type="button" value="0"onclick="document.cal.opt.value+='0'"></td>
+            <td>  
+ <input type="button" value="00"onclick="document.cal.opt.value+='00'"></td>
+        
+    <td>   <input type="button" value="."onclick="document.cal.opt.value+='.'"></td>
+  
+          <td>   <input type="button" value="=" class="blue" onclick="document.cal.opt.value=eval(document.cal.opt.value)"></td>
+  
+        
+        </tr>
+  </form>
+  </table>
+</body>
+</html>
